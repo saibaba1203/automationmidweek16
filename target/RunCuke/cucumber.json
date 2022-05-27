@@ -1,0 +1,327 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "TC-001 Create New User/SignUp",
+        "description": "",
+        "id": "signup-page;tc-001-create-new-user/signup",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 384451200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on home page",
+            "match": {
+              "location": "OnlineShoppingTest.iAmOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 82313800,
+              "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy17.toString(Unknown Source)\r\n\tat com.automation.pages.HomePage.clickOnSignInLink(HomePage.java:79)\r\n\tat com.automation.steps.OnlineShoppingTest.navigateToSignUpPage(OnlineShoppingTest.java:41)\r\n\tat ✽.Then Navigate to SignUp page(onlineshoping.feature:7)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "Navigate to SignUp page",
+            "match": {
+              "location": "OnlineShoppingTest.navigateToSignUpPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Create an account with random username",
+            "match": {
+              "location": "OnlineShoppingTest.createAnAccountWithRandomUsername()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Smoke"
+          },
+          {
+            "line": 4,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "TC-002 Sign In with newly created user credentials",
+        "description": "",
+        "id": "signup-page;tc-002-sign-in-with-newly-created-user-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5247700,
+              "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy17.toString(Unknown Source)\r\n\tat com.automation.pages.HomePage.clickOnSignInLink(HomePage.java:79)\r\n\tat com.automation.steps.OnlineShoppingTest.iAmOnTheSignInPage(OnlineShoppingTest.java:55)\r\n\tat ✽.Given I am on the Sign In Page(onlineshoping.feature:12)\r\n",
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "I am on the Sign In Page",
+            "match": {
+              "location": "OnlineShoppingTest.iAmOnTheSignInPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "Login using newly create credentials",
+            "match": {
+              "location": "OnlineShoppingTest.loginUsingNewlyCreateCredentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I shall verify the address information in my address section",
+            "match": {
+              "location": "OnlineShoppingTest.iShallVerifyTheAddressInformationInMyAddressSection()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@Sanity"
+          },
+          {
+            "line": 10,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "TC-003 Add product to Online Cart and checkout",
+        "description": "",
+        "id": "signup-page;tc-003-add-product-to-online-cart-and-checkout",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5169600,
+              "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy17.toString(Unknown Source)\r\n\tat com.automation.pages.HomePage.clickOnSignInLink(HomePage.java:79)\r\n\tat com.automation.steps.OnlineShoppingTest.iAmOnTheSignInPage(OnlineShoppingTest.java:55)\r\n\tat ✽.Given I am on the Sign In Page(onlineshoping.feature:18)\r\n",
+              "status": "failed"
+            },
+            "line": 18,
+            "name": "I am on the Sign In Page",
+            "match": {
+              "location": "OnlineShoppingTest.iAmOnTheSignInPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "Login using newly create credentials",
+            "match": {
+              "location": "OnlineShoppingTest.loginUsingNewlyCreateCredentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "I add below product to cart",
+            "match": {
+              "location": "OnlineShoppingTest.i_add_below_product_to_cart(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "category",
+                  "subCategory",
+                  "name",
+                  "model",
+                  "quantity"
+                ],
+                "line": 21
+              },
+              {
+                "cells": [
+                  "Dresses",
+                  "CASUAL DRESSES",
+                  "Printed Dress",
+                  "demo_3",
+                  "2"
+                ],
+                "line": 22
+              },
+              {
+                "cells": [
+                  "Women",
+                  "TOPS",
+                  "Faded Short Sleeve T-shirts",
+                  "demo_1",
+                  "3"
+                ],
+                "line": 23
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I shall validate shopping cart as below",
+            "match": {
+              "location": "OnlineShoppingTest.i_shall_validate_shopping_cart_as_below(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "model",
+                  "quantity"
+                ],
+                "line": 25
+              },
+              {
+                "cells": [
+                  "Printed Dress",
+                  "SKU : demo_3",
+                  "2"
+                ],
+                "line": 26
+              },
+              {
+                "cells": [
+                  "Faded Short Sleeve T-shirts",
+                  "SKU : demo_1",
+                  "3"
+                ],
+                "line": 27
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "I shall be able to Buy the product",
+            "match": {
+              "location": "OnlineShoppingTest.i_shall_be_able_to_Buy_the_product()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "I shall be able to Buy using cheque payment",
+            "match": {
+              "location": "OnlineShoppingTest.i_shall_be_able_to_Buy_using_cheque_payment()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "TC-004 Contact customer service for the previous successful order",
+        "description": "",
+        "id": "signup-page;tc-004-contact-customer-service-for-the-previous-successful-order",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8618400,
+              "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy17.toString(Unknown Source)\r\n\tat com.automation.pages.HomePage.clickOnSignInLink(HomePage.java:79)\r\n\tat com.automation.steps.OnlineShoppingTest.iAmOnTheSignInPage(OnlineShoppingTest.java:55)\r\n\tat ✽.Given I am on the Sign In Page(onlineshoping.feature:33)\r\n",
+              "status": "failed"
+            },
+            "line": 33,
+            "name": "I am on the Sign In Page",
+            "match": {
+              "location": "OnlineShoppingTest.iAmOnTheSignInPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "Login using newly create credentials",
+            "match": {
+              "location": "OnlineShoppingTest.loginUsingNewlyCreateCredentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "I am on the contact page",
+            "match": {
+              "location": "OnlineShoppingTest.iAmOnTheContactPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "I send refund request to customer care for previous order",
+            "match": {
+              "location": "OnlineShoppingTest.iSendRefundRequestToCustomerCareForPreviousOrder()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 31,
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "SignUp Page",
+    "description": "",
+    "id": "signup-page",
+    "keyword": "Feature",
+    "uri": "onlineshoping.feature"
+  }
+]

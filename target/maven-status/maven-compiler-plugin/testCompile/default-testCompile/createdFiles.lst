@@ -1,0 +1,6 @@
+com\automation\Hooks.class
+com\automation\RegressionTestRunner.class
+com\automation\steps\OnlineShoppingTest.class
+com\automation\OnlineShoppingTestRunner.class
+com\automation\SmokeTestRunner.class
+com\automation\SanityTestRunner.class
